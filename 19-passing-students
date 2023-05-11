@@ -4,10 +4,10 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
     If (passedExam) {
         passed++;
         }
-    elseif (passedAssignments) {
+    If (passedAssignments) {
         passed++;
         }
-    elseif (passedProject) {
+    If (passedProject) {
         passed++;
         }
     return passed >= 2;
