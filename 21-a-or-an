@@ -1,9 +1,9 @@
 public String aOrAn(String word) {
     //code here
     if (word.startsWith('a')) {
-        System.debug('an ' + word);
+        return 'an ' + word;
     }
     else {
-        System.debug('a ' + word);
+        return 'a ' + word;
         }
 }
