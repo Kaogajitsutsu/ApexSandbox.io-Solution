@@ -2,7 +2,7 @@ public Boolean isEndWithZero(Integer num){
      //code here
     Integer checkNum = num;
     If (Math.mod(checkNum, 10) == 0) {
-        return isEndWithZero;
+        return isEndWithZero = true;
     } else {
         return isEndWithZero = false;
     }
