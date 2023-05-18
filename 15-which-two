@@ -1,10 +1,15 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     //code here
     List<Integer> numOrder = new List<Integer>{a, b, c};
-    numOrder.sort();
-    If (numOrder[0] + numOrder[1] == numOrder[2]) {
+     
+    if (numOrder[1] + numOrder[2] == numOrder[0]) {
+        return 'a';
+    } else if (numOrder[0] + numOrder[2] == numOrder[1]) {
+        return 'b';
+    } else if (numOrder[1] + numOrder[2] == numOrder[2]) {
         return 'c';
     } else {
         return '';
     }
+
 }
