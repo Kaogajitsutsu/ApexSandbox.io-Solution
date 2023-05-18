@@ -1,9 +1,9 @@
 public Boolean isEndWithZero(Integer num){
      //code here
-    Integer checkNum = num;
-    If (Math.mod(checkNum, 10) == 0) {
-        return isEndWithZero = true;
-    } else {
-        return isEndWithZero = false;
-    }
+    System.debug(num);
+    // If (Math.mod(checkNum, 10) == 0) {
+        
+    //} else {
+    //    return isEndWithZero = false;
+    //}
 }
