@@ -8,7 +8,7 @@ public String reverseWordsInASentence(String sentence){
         reverseWords = reverseSen.substringBefore(' ');
         reverseWords = reverseWords.reverse() + ' ';
         reverseSen = reverseSen.substringAfter(' ');
-        reverseWords2 = reverseWords2 + reverseWords;
+        reverseWords2 += reverseWords;
         if (reverseSen.containsNone(' ') == true) {
             reverseWords = reverseSen.substringBefore(' ');
             reverseWords = reverseWords.reverse();
