@@ -8,10 +8,6 @@ public String reverseWordsInASentence(String sentence){
         reverseSen = null;
     } 
 
-    if (reverseSen == null) {
-        reverseSecondWord = null;
-    }
-
     while (reverseSen != null) {
         reverseFirstWord = reverseSen.substringBefore(' ');
         reverseFirstWord = reverseFirstWord.reverse() + ' ';
