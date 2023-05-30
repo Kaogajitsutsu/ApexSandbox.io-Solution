@@ -14,5 +14,5 @@ public String reverseWordsInASentence(String sentence){
         }
     }
 
-    return reverseWords2;
+    return reverseWords2 + reverseSen;
 }
