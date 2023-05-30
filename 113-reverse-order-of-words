@@ -8,6 +8,7 @@ public String reverseWordsInASentence(String sentence){
         reverseSen = null;
     } else if (reverseSen == null) {
         reverseSecondWord = null;
+        reverseSen = null;
         }
 
     while (reverseSen != null) {
