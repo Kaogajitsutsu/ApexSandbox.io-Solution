@@ -4,7 +4,7 @@ public Integer fibonacci(Integer n) {
     Integer second = 1;
     Integer sumFib = 2;
 
-    for (Integer i = 1; i < n-1; i++) {
+    for (Integer i = 1; i < (n-1); i++) {
         first = second;
         second = sumFib;
         sumFib = first + second;
