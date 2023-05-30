@@ -6,7 +6,9 @@ public String reverseWordsInASentence(String sentence){
 
     if (reverseSen == '') {
         reverseSen = null;
-    }
+    } else if (reverseSen == null) {
+        reverseSecondWord = null;
+        }
 
     while (reverseSen != null) {
         reverseFirstWord = reverseSen.substringBefore(' ');
