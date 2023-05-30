@@ -10,8 +10,9 @@ public Integer nextPrime(Integer num) {
     }
 
     for (Integer j = (num + 1); j <= (num += num); j++) {
-        if (isPrime(j) == true);
+        if (isPrime(j) == true) {
             return j;
+        }
     }
 
 }
