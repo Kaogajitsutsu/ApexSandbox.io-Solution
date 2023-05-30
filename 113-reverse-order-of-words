@@ -1,6 +1,8 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
     String reverseSen = sentence.reverse();
+    String reverseWords = '';
 
-    return reverseSen;
+    reverseWords = reverseSen.substringBefore(' ');
+    return reverseWords;
 }
