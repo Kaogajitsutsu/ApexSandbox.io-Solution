@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
     //code here
     String strHour = strTime.substringBefore(':');
-    Integer hour = valueOf(strHour);
+    Integer hour = Integer.valueOf(strHour);
     String ampm = 'AM';
 
     If (hour >= 12) {
@@ -11,5 +11,5 @@ public String changeTimeFormat(String strTime) {
         }
     }
 
-    return strHour.valueOf(hour) + ':' + strTime.substringAfter(':');
+    return String.valueOf(hour) + ':' + strTime.substringAfter(':');
 }
