@@ -5,7 +5,7 @@ public String reverseWordsInASentence(String sentence){
     String reverseSecondWord = '';
 
     if (reverseSen == null) {
-        reverseWords2 == null;
+        reverseSecondWord == null;
     }
 
     while (reverseSen != null) {
@@ -21,5 +21,5 @@ public String reverseWordsInASentence(String sentence){
         }
     }
 
-    return reverseWords2;
+    return reverseSecondWord;
 }
