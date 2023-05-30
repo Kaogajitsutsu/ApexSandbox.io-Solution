@@ -4,5 +4,7 @@ public String reverseWordsInASentence(String sentence){
     String reverseWords = '';
 
     reverseWords = reverseSen.substringBefore(' ');
+    reverseWords = reverseWords.reverse();
+    
     return reverseWords;
 }
