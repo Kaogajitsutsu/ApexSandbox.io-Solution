@@ -11,10 +11,14 @@ public String changeTimeFormat(String strTime) {
         }
     }
 
+    if (hour = 0) {
+        hour = 12;
+    } 
+
     strHour = String.valueOf(hour);
     if (strHour.length() == 1) {
         strHour = '0' + strHour;
     }
-    
+
     return strHour + ':' + strTime.substringAfter(':') + ' ' + ampm;
 }
