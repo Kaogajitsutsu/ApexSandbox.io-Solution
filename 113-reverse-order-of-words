@@ -1,8 +1,12 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
     String reverseSen = sentence.reverse();
-    String reverseWords = '';
-    String reverseWords2 = '';
+    String reverseFirstWord = '';
+    String reverseSecondWord = '';
+
+    if (reverseSen == null) {
+        reverseWords2 == null;
+    }
 
     while (reverseSen != null) {
         reverseWords = reverseSen.substringBefore(' ');
