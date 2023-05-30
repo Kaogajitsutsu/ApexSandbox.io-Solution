@@ -5,7 +5,7 @@ public String reverseWordsInASentence(String sentence){
     String reverseWords2 = '';
 
     reverseWords = reverseSen.substringBefore(' ');
-    reverseWords = reverseWords.reverse();
+    reverseWords = reverseWords.reverse() + ' ';
     reverseWords2 = reverseSen.substringAfter(' ');
     reverseWords2 = reverseSen.substringBefore(' ');
     reverseWords2 = reverseWords2.reverse();
