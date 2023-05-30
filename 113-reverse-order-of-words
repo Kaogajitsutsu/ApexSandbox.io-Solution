@@ -10,7 +10,7 @@ public String reverseWordsInASentence(String sentence){
         reverseSen = reverseSen.substringAfter(' ');
         reverseWords2 = reverseWords2 + reverseWords;
         if (reverseSen.containsNone(' ') == true) {
-            reverseWords.reverse();
+            reverseWords = reverseWords.reverse();
             reverseWords2 = reverseWords2 + reverseWords;
             reverseSen = null;
         }
