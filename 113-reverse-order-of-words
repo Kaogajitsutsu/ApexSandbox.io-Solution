@@ -12,7 +12,7 @@ public String reverseWordsInASentence(String sentence){
         if (reverseSen.containsNone(' ') == true) {
             reverseWords = reverseSen.substringBefore(' ');
             reverseWords = reverseWords.reverse();
-            reverseWords2 = reverseWords2 + reverseWords;
+            reverseWords2 += reverseWords;
             reverseSen = null;
         }
     }
