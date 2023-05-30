@@ -4,11 +4,12 @@ public String reverseWordsInASentence(String sentence){
     String reverseWords = '';
     String reverseWords2 = '';
 
-    reverseWords = reverseSen.substringBefore(' ');
-    reverseWords = reverseWords.reverse() + ' ';
-    reverseSen = reverseSen.substringAfter(' ');
-    reverseWords2 = reverseSen.substringBefore(' ');
-    reverseWords2 = reverseWords2.reverse();
+    while (reverseSen != null) {
+        reverseWords = reverseSen.substringBefore(' ');
+        reverseWords = reverseWords.reverse() + ' ';
+        reverseSen = reverseSen.substringAfter(' ');
+        reverseWords2 = reverseWords2 + reverseWords;
+        }
 
-    return reverseWords + reverseWords2;
+    return reverseWords2;
 }
