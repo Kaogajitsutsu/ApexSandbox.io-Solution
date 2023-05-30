@@ -4,6 +4,9 @@ public String reverseWordsInASentence(String sentence){
     String reverseFirstWord = '';
     String reverseSecondWord = '';
 
+    if (reverseSen == null) {
+        reverseSecondWord == null;
+    }
 
     while (reverseSen != null) {
         reverseFirstWord = reverseSen.substringBefore(' ');
