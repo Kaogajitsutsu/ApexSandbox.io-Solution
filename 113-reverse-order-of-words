@@ -1,12 +1,14 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
-    if (sentence == null) {
-        return null;
-    }
+    
     
     String reversedInput = sentence.reverse();
     String reversedWord = '';
     String outputSentence = '';
+
+    if (sentence == null) {
+        return null;
+    }
 
     if (reversedInput == '') {
         reversedInput = null;
