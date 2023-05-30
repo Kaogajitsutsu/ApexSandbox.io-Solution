@@ -6,7 +6,7 @@ public String reverseWordsInASentence(String sentence){
 
     reverseWords = reverseSen.substringBefore(' ');
     reverseWords = reverseWords.reverse() + ' ';
-    reverseWords2 = reverseSen.substringAfter(' ');
+    reverseSen = reverseSen.substringAfter(' ');
     reverseWords2 = reverseSen.substringBefore(' ');
     reverseWords2 = reverseWords2.reverse();
 
