@@ -9,14 +9,14 @@ public String reverseWordsInASentence(String sentence){
     }
 
     while (reverseSen != null) {
-        reverseWords = reverseSen.substringBefore(' ');
-        reverseWords = reverseWords.reverse() + ' ';
+        reverseFirstWord = reverseSen.substringBefore(' ');
+        reverseFirstWord = reverseFirstWord.reverse() + ' ';
         reverseSen = reverseSen.substringAfter(' ');
-        reverseWords2 += reverseWords;
+        reverseSecondWord += reverseFirstWord;
         if (reverseSen.containsNone(' ') == true) {
-            reverseWords = reverseSen.substringBefore(' ');
-            reverseWords = reverseWords.reverse();
-            reverseWords2 += reverseWords;
+            reverseFirstWord = reverseSen.substringBefore(' ');
+            reverseFirstWord = reverseFirstWord.reverse();
+            reverseSecondWord += reverseFirstWord;
             reverseSen = null;
         }
     }
