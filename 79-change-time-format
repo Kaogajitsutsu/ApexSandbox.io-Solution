@@ -4,12 +4,17 @@ public String changeTimeFormat(String strTime) {
     Integer hour = Integer.valueOf(strHour);
     String ampm = 'AM';
 
-    If (hour >= 12) {
+    if (hour >= 12) {
         ampm = 'PM';
-        If (hour > 12) {
+        if (hour > 12) {
             hour = hour - 12;
         }
     }
 
-    return String.format(%02d, hour) + ':' + strTime.substringAfter(':') + ' ' + ampm;
+    strHour = String.valueOf(hour);
+    if (strHour.length() == 1) {
+        strHour = '0' + strHour;
+    }
+    
+    return strHour + ':' + strTime.substringAfter(':') + ' ' + ampm;
 }
