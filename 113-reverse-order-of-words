@@ -1,26 +1,26 @@
 public String reverseWordsInASentence(String sentence){
     //your flawless code here
-    String reverseSen = sentence.reverse();
-    String reverseFirstWord = '';
-    String reverseSecondWord = '';
+String reversedInput = sentence.reverse();
+    String reversedWord = '';
+    String outputSentence = '';
 
-    if (reverseSen == '') {
-        reverseSen = null;
+    if (reversedInput == '') {
+        reversedInput = null;
     } 
 
-    while (reverseSen != null) {
-        reverseFirstWord = reverseSen.substringBefore(' ');
-        reverseFirstWord = reverseFirstWord.reverse() + ' ';
-        reverseSen = reverseSen.substringAfter(' ');
-        reverseSecondWord += reverseFirstWord;
+    while (reversedInput != null) {
+        reversedWord = reversedInput.substringBefore(' ');
+        reversedWord = reversedWord.reverse() + ' ';
+        reversedInput = reversedInput.substringAfter(' ');
+        outputSentence += reversedWord;
 
-        if (reverseSen.containsNone(' ') == true) {
-            reverseFirstWord = reverseSen.substringBefore(' ');
-            reverseFirstWord = reverseFirstWord.reverse();
-            reverseSecondWord += reverseFirstWord;
-            reverseSen = null;
+        if (reversedInput.containsNone(' ') == true) {
+            reversedWord = reversedInput.substringBefore(' ');
+            reversedWord = reversedWord.reverse();
+            outputSentence += reversedWord;
+            reversedInput = null;
         }
     }
 
-    return reverseSecondWord;
+    return outputSentence;
 }
