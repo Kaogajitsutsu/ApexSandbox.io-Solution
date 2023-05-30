@@ -11,5 +11,5 @@ public String changeTimeFormat(String strTime) {
         }
     }
 
-    return String.valueOf(hour) + ':' + strTime.substringAfter(':');
+    return strHour.valueOf(hour) + ':' + strTime.substringAfter(':');
 }
