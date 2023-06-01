@@ -2,5 +2,6 @@ public String formatName(String firstName, String lastName) {
     //code here
     String formatedFirstName = String.IsBlank(firstName)? '': firstName;
     String formatedLastName = String.IsBlank(lastName)? '': lastName;
-    return formatedLastName + ', ' + formatedFirstName;
+    String formatedCommaString = (String.IsBlank(firstName) || String.IsBlank(lastName))? '': ', '; 
+    return formatedLastName + formatedCommaString + formatedFirstName;
 }
