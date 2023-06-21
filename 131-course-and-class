@@ -1,0 +1,9 @@
+public void createCourseAndClass(String name, String description) {
+    // code here
+    List<apxio__Course__c> course = [SELECT apxio__Course_Details__c, Name FROM apxio__Course__c];
+    insert course;
+
+    List<apxio__Course__c> className = [SELECT apxio__Description__c, Name FROM apxio__Class__c];
+
+    
+}
