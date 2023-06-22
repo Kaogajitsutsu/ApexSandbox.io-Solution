@@ -10,7 +10,7 @@ public void createCourseAndClass(String name, String description) {
     apxioClass.apxio__Course__c = course.Id;
 
     if (description.length() > 255) {
-        apxioClass.apxio__Description__c = LEFT(description, 255);
+        apxioClass.apxio__Description__c = description.substring(0, 255);
     } else {
         apxioClass.apxio__Description__c = description;
     }
