@@ -9,8 +9,8 @@ public void createCourseAndClass(String name, String description) {
     apxioClass.Name = name;
     apxioClass.apxio__Description__c = description;
 
-    if (apxioClass.apxio__Description__c.length() > 255) {
-        apxioClass.apxio__Description__c = apxioClass.apxio__Description__c.substring(0, 255);
+    if (description.length() > 255) {
+        apxioClass.apxio__Description__c = description.substring(0, 255);
     }
     insert apxioClass;
 }
