@@ -12,7 +12,7 @@ public Id classFromCourse(String courseName) {
     apxioClass.apxio__Course__c = course[0].Id;
 
     insert apxioClass;
-    return apxio__Course__c.Id;
+    return apxioClass.Id;
 
     
 
