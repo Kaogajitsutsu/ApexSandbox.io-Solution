@@ -1,0 +1,11 @@
+public Id classFromCourse(String courseName) {
+    // code here
+    
+    List<apxio__Course__c> course = [SELECT Id, Name FROM apxio__Course__c WHERE Name = :courseName LIMIT 1];
+    
+    if (course = null) {
+        return null;
+    }
+
+
+}
