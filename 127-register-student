@@ -8,8 +8,8 @@ public String registerStudent(String name, String phone, String email) {
     insert student;
 
     String registrationNumber;
-    List<apxio__Student__c> records = [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :student.Id LIMIT 1];
-    registrationNumber = records[0].apxio__Registration_Number__c;
+    apxio_Student__c insertedStudent = [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :student.Id];
+    registrationNumber = insertedStudent.apxio__Registration_Number__c;
 
     return registrationNumber;
 }
