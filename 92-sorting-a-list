@@ -3,7 +3,10 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
     //code here
     List<String> results = new List<String>();
     results = accountNames;
-    results.sort();
+    
+    if (results.isblank()) {
+        return null;
+    }
 
-    return results;
+    return results.sort();
 }
