@@ -9,6 +9,5 @@ public List<String> getNamesInAscOrder(List<String> accountNames) {
 
     results.sort();
     return results;
-}
 
 }
