@@ -1,13 +1,14 @@
-public List<String> getNamesInAscOrder(List<String> accountNames)
-{
-    //code here
-    List<String> results = new List<String>();
-    results = accountNames;
-    
-    if (results.isblank()) {
+public List<String> getNamesInAscOrder(List<String> accountNames) {
+
+    if (accountNames.isEmpty()) {
         return null;
     }
+    
+    List<String> results = new List<String>();
+    results.addAll(accountNames);
 
     results.sort();
     return results;
+}
+
 }
