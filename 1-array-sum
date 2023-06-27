@@ -1,7 +1,7 @@
 public static Integer arraySum(List<Integer> numbers) {
     //code here
     Integer sumTotal = 0;
-    for (Integer i = 0; 0 < numbers.size(); i++) {
+    for (Integer i = 0; 0 <= numbers.size(); i++) {
         sumTotal += numbers[i];
     }
     return sumTotal;
