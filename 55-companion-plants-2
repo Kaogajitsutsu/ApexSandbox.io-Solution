@@ -3,7 +3,11 @@ public Boolean companionPlants(List<String> plants) {
     for (Integer i = 0; i < plants.size() - 1; i++) {
         String plant = plants[i];
         String nextPlant = plants[i+1];
-            
+
+        if (nextPlant == null) {
+            return false;
+        }     
+        
         if (plant == 'onions') {
             if (nextPlant != 'lettuce' && nextPlant != 'carrots' && nextPlant != 'tomatoes') {
                 return false;
@@ -24,8 +28,8 @@ public Boolean companionPlants(List<String> plants) {
             if (nextPlant != 'onions') {
                 return false;
             }
-            } else {
-                return false;
+        } else {
+            return false;
             }
         }
         return true;
