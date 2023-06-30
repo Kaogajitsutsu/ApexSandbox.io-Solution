@@ -1,0 +1,33 @@
+public Boolean companionPlants(List<String> plants) {
+    //code here
+    for (Integer i = 0; i < plants.size() - 1; i++) {
+        String plant = plants[i];
+        String nextPlant = plants[i+1];
+            
+        if (plant == 'onions') {
+            if (nextPlant != 'lettuce' && nextPlant != 'carrots' && nextPlant != 'tomatoes') {
+                return false;
+            }
+        } else if (plant == 'lettuce') {
+            if (nextPlant != 'cucumbers' && nextPlant != 'onions') {
+                return false;
+            }
+        } else if (plant == 'cucumbers') {
+            if (nextPlant != 'lettuce') {
+                return false;
+            }
+        } else if (plant == 'carrots') {
+            if (nextPlant != 'onions') {
+                return false;
+            }
+        } else if (plant == 'tomatoes') {
+            if (nextPlant != 'onions') {
+                return false;
+            }
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+}
