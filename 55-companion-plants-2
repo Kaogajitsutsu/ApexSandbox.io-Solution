@@ -29,5 +29,4 @@ public Boolean companionPlants(List<String> plants) {
             }
         }
         return true;
-    }
 }
